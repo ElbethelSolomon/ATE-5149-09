@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d9f3f7;
+}
+.itemheader{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.644),rgba(4, 9, 30, 0.644)),url(image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b468d59;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fca23b;
+    text-decoration: none;
+    font-size: large;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #FD931D ;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.active {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.textbox{
+    width: 90%;
+    color: #f3510e;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox__h1{
+    font-size: 60px;
+} 
+.textbox__p{
+    text-align: center;
+    font-size: 20px;
+    color: #FD931D;
+}
+.active {
+    color: #000;
+    text-decoration: underline;
+    font-weight: bold;
+    text-emphasis-color: #000;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.about-content{
+    width: 50%;
+    padding: 50px;
+    color:#d9f3f7 ;
+}
+.ctn{
+    margin-top: 30px;
+    padding: 8px 20px;
+    background: #f3510e;
+    border-radius: 40px;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-top: 50px;
+}
+.ctn:hover{
+    background-color: #fd941d;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about .row .col{
+    width: 50%;
+}
+.about .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.image-gallery img{
+    max-width: 300px;
+    margin: 5px;
+}
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width: 60%;
+    padding-top: 50px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+    margin-top: 40px;
+    text-decoration: none;
+}
