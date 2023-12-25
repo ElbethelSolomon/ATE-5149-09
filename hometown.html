@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Hesda Media and Communication</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d9f3f7;
+}
+.itemheader{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.644),rgba(4, 9, 30, 0.644)),url(image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b468d59;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fca23b;
+    text-decoration: none;
+    font-size: large;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #FD931D ;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.active {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.textbox{
+    width: 90%;
+    color: #f3510e;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox__h1{
+    font-size: 60px;
+} 
+.textbox__p{
+    text-align: center;
+    font-size: 20px;
+    color: #FD931D;
+}
+.active {
+    color: #000;
+    text-decoration: underline;
+    font-weight: bold;
+    text-emphasis-color: #000;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.about-content{
+    width: 50%;
+    padding: 50px;
+    color:#d9f3f7 ;
+}
+.ctn{
+    margin-top: 30px;
+    padding: 8px 20px;
+    background: #f3510e;
+    border-radius: 40px;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-top: 50px;
+}
+.ctn:hover{
+    background-color: #fd941d;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about .row .col{
+    width: 50%;
+}
+.about .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.image-gallery img{
+    max-width: 300px;
+    margin: 5px;
+}
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width: 60%;
+    padding-top: 50px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+    margin-top: 40px;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+    <section class="itemheader">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">famlyandfriends</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HoeTown</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Lifeexperiences</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+              </div>
+            </div>
+        </nav>
+        <div class="textbox">
+            <h1 class="textbox__h1">Hello, I am Elbethel Solomon</h1>
+            <p class="textbox__p">Welcome to my page, My name is Elbethel Solomon I am currently an undergraduate  at AAU. <br>Come, get to know me more</p>
+        </div>
+    </section>
+    <section class="about" id="about">
+       <div class="row">
+            <div class="col content-col">
+                <h1>GET TO ADDIS ABABA</h1>
+                <p>Addis Ababa is a highly developed and important cultural, artistic, financial and administrative centre of Ethiopia. Several international organizations have their headquarters there, including the Organization of African Unity. Addis Ababa is known for its vibrant jazz scene, with numerous jazz clubs and festivals featuring talented local and international musicians.</p>
+                <button class="ctn" onclick="document.getElementById('demo').innerHTML=('In the dynamic realm of media and communications, Hesada Media and Communications stands out as a trusted provider of high-quality radio and TV productions. With a keen understanding of the power of storytelling, Hesadas team of experienced professionals transforms ideas into captivating narratives that resonate with a wide range of audiences. Hesada Media and Communications delves beyond the surface, diving deep into the complexities of our world through captivating documentaries. Dedicated to exploring a broad spectrum of topics, from historical narratives and cultural intricacies to pressing social issues, Hesada produces documentaries that not only inform but also inspire critical thinking and social awareness.In todays competitive marketplace, a strong brand is essential for businesses to thrive. Hesada Media and Communications recognizes the power of a well-defined brand to attract customers, build loyalty, and drive business growth. With a team of experienced branding and creative professionals, Hesada guides businesses through the process of developing and maintaining a brand that resonates with their target audience.In the ever-evolving digital landscape, Hesada Media and Communications stands out as a trusted provider of web development, mobile app design, and digital marketing services. With a deep understanding of the digital realm, Hesadas team of experienced professionals helps businesses establish a strong online presence and reach their target audience effectively.');">Learn More</button>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="images/about3.jpg" alt="">
+                    <img src="images/about2.jpg" alt="">
+                    <img src="images/about5.jpg" alt="">
+                    <img src="images/about4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html> 
