@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Elbethel Solomon</title>
+        <link rel="stylesheet" href="css/bootstrap.css">     
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    font-family: 'Fira Sans', sans-serif;
+}
+.itemheader{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b468d59;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fca23b;
+    text-decoration: none;
+    font-size: large;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #FD931D ;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.textbox{
+    width: 90%;
+    color: #fc8c0c;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox__h1{
+    font-size: 60px;
+    color: #f3510e;
+    text-align: center;
+} 
+.textbox__p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #FD931D;
+    text-align: center;
+}
+.portfolio .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25%,1fr));
+    gap: 1rem;
+    margin: 6rem auto;
+    width: 90%;
+}
+.portfolio .row .box{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio h2{
+    margin-top: 50px;
+    text-align: center;
+    color: #f3510e;
+    font-size: 40px;
+}
+.line{
+    width: 50%;
+    height: 4px;
+    background-color:#fd941d;
+    margin: 10px auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+.portfolio .row .box:hover img{
+    transform: translateY(-100%);
+}
+.portfolio .row .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio .row .box:hover .content{
+    transform: translateY(0);
+}
+.portfolio .row .box .content{
+    position: absolute;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 3rem 2rem;
+    height: 100%; width: 100%;
+    transform: translateY(100%);
+    padding-top: 2.5rem;
+}
+.portfolio .row .box .content h3{
+    font-size: 2.5rem;
+    color: var(--sc-color);
+    margin-top: 4rem;
+}
+.portfolio .row .box .content p{
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: var(--min-color);
+    margin-bottom: 0;
+    color: var(--min-color);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+.about .row .col{
+    width: 50%;
+}
+.about .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.image-gallery img{
+    max-width: 300px;
+    margin: 5px;
+    padding-right: 20px;
+    margin-right: 50px;
+}
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width: 60%;
+    padding-top: 50px;
+    padding-right: 20px;
+    margin-right: 30px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+    margin-top: 40px;
+    text-decoration: none;
+}
+#demo{
+    text-align: center;
+}
+        </style>   
+    </head>
+    <body>
+       <section class="itemheader">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">famlyandfriends</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HoeTown</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Lifeexperiences</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+              </div>
+            </div>
+        </nav>
+            <div class="textbox">
+                <h1 class="textbox__h1">Hello, I am Elbethel Solomon</h1>
+                <p class="textbox__p">Welcome to my page, My name is Elbethel Solomon I am currently an undergraduate  at AAU. <br>Come, get to know me more</p>
+            </div>
+       </section>
+       <div class="portfolio" id="portfolio">
+        <div class="heading">
+            <div class="line"></div>
+            <h2>LIFE EXPERIENCES</h2>
+            <div class="line"></div>
+            <div></div>
+        </div>
+        <div class="row">
+
+            <div class="box">
+                <img src="images/about2.jpg" alt="image">
+                <div class="content">
+                    <h3>
+                        Branding and Creativity
+                    </h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/eth.jpg" alt="image">
+                <div class="content">
+                    <h3>
+                        Documentaries
+                    </h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/about3.jpg" alt="image">
+                <div class="content">
+                    <h3>
+                        Psychology
+                    </h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/about4.jpg" alt="image">
+                <div class="content">
+                    <h3>
+                        Information Technology
+                    </h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/int3.jpg" alt="image">
+                <div class="content">
+                    <h3>
+                        Event Organization
+                    </h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/alert.jpg" alt="image">
+                <div class="content">
+                    <h3>
+                        Web and Digital
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col content-col">
+                <h1>My Life Experiences</h1>
+                <p id="demo">It has been almost 7 years since I have enrolled into AAU. I am still learning to get my degree. At times I feel like I am running around circles but then I remeber why I started and when I started it. I was almost 19 years old I was young and the future looked as bright as the sun. I was full of hope and excitment. I never knew what I was about to experience was one of my challenging life experiences. It was all a roller coster and I am now a completely different person.</p>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <video src="images/Elbethel_Solomon_Video_Submission.mp4" width="600px" controls autoplay muted loop></video>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+</body>
+</html>

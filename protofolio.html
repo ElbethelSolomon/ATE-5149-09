@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Hesda Media and Communication</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d9f3f7;
+}
+body , html{
+    overflow-x: hidden;
+}
+.header{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.562),rgba(4, 9, 30, 0.603)),url(image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b468d59;
+}
+nav img{
+    width: 100px;
+    border-radius: 20px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fca23b;
+    text-decoration: none;
+    font-size: large;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #FD931D ;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+textbox{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox__h1{
+    font-size: 60px;
+    color: #f3510e;
+    text-align: center;
+} 
+.textbox__p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #FD931D;
+    text-align: center;
+}
+.textbox__a--herobtn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: large;
+    color: #fff;
+    border: 3px solid #F2652B;
+    padding: 12px 34px;
+    font-size: 18px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.textbox__a--herobtn:hover{
+    border: 1px solid #F2652B;
+    border-radius: 3px;
+    background: #FD931D;
+    transition: 1s;
+}
+/*---services---*/
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: #f3510e;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.services{
+    width: 100%;
+    margin: 80px auto;
+    background-color: #d9f3f7;
+}
+.services h1{
+    text-align: center;
+    color: #f3510e;
+    font-size: 40px;
+}
+.line{
+    width: 50%;
+    height: 4px;
+    background-color:#fd941d;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+.ctn{
+    margin-top: 30px;
+    padding: 8px 20px;
+    background: #f3510e;
+    border-radius: 40px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.ctn:hover{
+    background-color: #fd941d;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .first-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row .first-col img{
+    width: 50%;
+    border-radius: 30px;
+}
+.services .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: #f3510e;
+    margin: 20px auto;
+}
+p{
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #000 ;
+    font-size: 18px;
+    text-emphasis: bold;
+    padding: 0px 40px;
+}
+.services .ctn{
+    margin-top: 30px;
+}
+
+</style>
+</head>
+<body>
+    <section class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">famlyandfriends</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HoeTown</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Lifeexperiences</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+              </div>
+            </div>
+        </nav>
+        <div class="textbox">
+            <h1 class="textbox__h1">Hello, I am Elbethel Solomon</h1>
+            <p class="textbox__p">Welcome to my page, My name is Elbethel Solomon I am currently an undergraduate  at AAU. <br>Come, get to know me more</p>
+        </div>
+    </section>
+    <section class="services">
+        <div class="title">
+            <div class="line"></div>
+            <h1>MY PORTOFOLIO</h1>
+            <div class="line">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="first-col">
+                <img src="images/about2.jpg" alt="">
+                <h4>INFORMATION TECHNOLOGY</h4>
+                <p>Information technology (IT) is the use of any computers, storage, networking and other physical devices, infrastructure and processes to create, process, store, secure and exchange all forms of electronic data. Typically, IT is used in the context of business operations.</p>
+                <a href="#" class="ctn">LEARN MORE</a>
+            </div>
+            <div class="first-col">
+                <img src="images/about4.jpg" alt="">
+                <h4>WEBSITE DEVELOPMENT</h4>
+                <p>A web developer is someone who builds websites using coding and programming. They will take an overall website design concept and begin building it using different coding languages. Web developers often work alongside web designers or the marketing team.</p>
+                <a href="#" class="ctn">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="first-col">
+                <img src="images/about3.jpg" alt="">
+                <h4>TECHNICAL SUPPORT AND ASSISTANCE</h4>
+                <p>Technical support refers to the oversight and maintenance of computer hardware and software systems, particularly the resolution of technical issues that may arise regarding customer accounts or company software infrastructure. Technical support is a crucial component of any IT department.</p>
+                <a href="#" class="ctn">LEARN MORE</a>
+            </div>
+            <div class="first-col">
+                <img src="images/about3.jpg" alt="">
+                <h4>GIVING TUTORIAL</h4>
+                <p>Tutoring students is a great responsibility, but it can also be one of life's most rewarding experiences. However, just knowing a lot about a subject area doesn't necessarily mean you'll be a good tutor. Education serves as a network for students to connect with their peers, tutors.</p>
+                <a href="#" class="ctn">LEARN MORE</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
